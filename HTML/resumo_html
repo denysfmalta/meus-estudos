@@ -1,0 +1,103 @@
+# HTML5
+## Hyper Text Markup Language
+Assim como Markdown, HTML não é classificada como linguagem de programação e sim como linguagem de marcação.   
+
+Seus elementos contêm tags que "marcam" o documento de determinado forma, daí a importância de produzir documentos HTMLs semânticos.
+
+O termo "hyper text" está relacionado com o conceito de hiperlinks, que caracterizam a forma que navegamos nas páginas webs.
+
+## Elemento de HTML
+```
+<h3>...</h3>
+
+<p>...</p>
+
+<small>...</small>
+
+<i>...</i>
+
+<u>...</u>
+```
+
+Um elemento de HTML é constituído de uma tag de abertura, o conteúdo e uma tag de fechamento.
+
+Neste caso, se trata de um elemento de parágrafo, definida pela tag `<p>`.
+
+## Estrutura base de uma página HTML
+
+```
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+	</body>
+</html>
+```
+
+O elemento `<!DOCTYPE html>` é imprescendível para todo documento HTML. Ele informa o browser que deve interpretar a página HTML como uma página HTML.
+
+Abaixo, vemos a organização dos elementos através do aninhamento, elementos dentro de elementos. Todos os elementos são aninhados dentro da tag `<html>`. 
+
+Dentro da tag `<head>` há informações de metadados, como título da página, ícone, importação de scripts e mais.
+
+Aninhado na tag `<body>` é onde aparece o conteúdo visível da página (parágrafos, frases, tabelas, imagens, etc).
+
+## Elementos vazios
+Alguns elementos de HTML não possuem uma tag de fechamento. 
+
+ São determinados como elementos vazios:
+ ```
+ <hr> <!-- cria uma linha que separa seções do documento-->
+ <br> <!-- quebra uma linha-->
+ ```
+ 
+ ## Listas ordenadas e desordenadas
+ Usamos estes elementos para fazer uma lista enumerada:
+ ```
+ <ol>
+ 	<li>...</li>
+ 	<li>...</li>
+ 	<li>...</li>
+ </ol>
+ ```
+ E estes para fazer uma lista de bullets:
+ ```
+ <ul>
+ 	<li>...</li>
+ 	<li>...</li>
+ 	<li>...</li>
+ </ul>
+ ```
+ 
+## Links/hiperligações
+
+Elementos interativos que navegam para uma outra página do  mesmo site, ou para um outro site, ou para uma outra seção dentro da mesma página. Obrigatoriamente precisam conter um atributo href.
+
+```
+<a href="www.google.com">Ir para o Google</a>
+```
+
+ ## Imagens
+ Para adicionarmos imagens à página, utilizamos o elemento "img", passando dentro do atributo "src" o endereço (local ou link) da imagem.
+ 
+ ```
+ <img src="imagem_001.jpg" alt="nome">
+ ```
+ 
+ ## Atributos
+Atributos são propriedades adicionais para configurar ou alterar o comportamento dos elementos.
+
+O elemento HTML pode conter um atributo. Em alguns casos, seu uso é obrigatório.
+O atributo é definido dentro da tag de abertura de um elemento.
+
+```
+<a href="www.google.com">Visitar o Google</a>
+```
+Como vemos acima, a tag `<a>` pede um atributo "href", que é o endereço da página ou seção a ser linkada pelo elemento.
+
+### Atributos Globais
+São atributos que podem ser usados em todos os elemento HTML.
+Os mais usados são:
+-  **id**: identifica de forma única um elemento no documento HTML.
+- **class**: lista de classes de um elemento HTML.
