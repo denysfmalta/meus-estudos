@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	</head>
-	<body>
-		<table>
-           <thead>
-			<tr>
-				<th>Coluna 1</th>
-				<th>Coluna 2</th>
-				<th>Coluna 3</th>
-			</tr>
-          </thead> 
-          <tbody>
-			<tr>
-				<td>Coluna 1 - Linha 1</td>
-				<td>Coluna 2 - Linha 1</td>
-				<td>Coluna 3 - Linha 1</td>
-			</tr>
-			<tr>
-				<td>Coluna 1 - Linha 1</td>
-				<td>Coluna 2 - Linha 1</td>
-				<td>Coluna 3 - Linha 1</td>
-			</tr>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        table {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Título da Tabela</caption>
+        <thead>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Coluna 1 - Linha 1</td>
+                <td>Coluna 2 - Linha 1</td>
+                <td>Coluna 3 - Linha 1</td>
+            </tr>
+            <tr>
+                <td>Coluna 1 - Linha 1</td>
+                <td>Coluna 2 - Linha 1</td>
+                <td>Coluna 3 - Linha 1</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td>Rodapé 1</td>
                 <td>Rodapé 2</td>
-                <td>Rodapé 3</td> 
+                <td>Rodapé 3</td>
             </tr>
         </tfoot>
     </table>
-	</body>
+</body>
+
 </html>
