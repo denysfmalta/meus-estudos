@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .form-container{
+            width: 60%;
+            margin: auto;
+        }
+
+        .form-group{
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+    <h3>Formulário</h3>
+    <label for="campo-usuario">Usuario:</label>
+        <div class="form-group">
+            <input type="text" name="campo_usuario" id="campo-usuario" placeholder="Email do usuário" required>
+        </div>
+        
+        <label for="campo-senha">Senha:</label>
+        <div class="form-group">
+            <input type="password" name="campo_senha" id="campo-senha" placeholder="Senha" required>
+        </div>
+            <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="campo_check" id="">
+                        Ativar ou desativar opção
+                     </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="Gênero" id="" value="m" checked>
+                    Masculino
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="Gênero" id="" value="f">
+                    Feminino
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="range" min="0" max="1000" step="100" onInput="mostrar(this.value)">
+                <p id="valor_range"></p>
+            </div>
+
+            <input type="hidden" name="" value="escondido">
+        <div class="form-group">
+            <button type="button">Botão</button>
+            <input type="reset" value="Limpar" accesskey="l" title="Alt + L">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</div>
+
+    <script>
+        function mostrar(value) {
+            document.getElementById("valor_range").innerHTML = value
+        }
+    </script>
+</body>
+</html>
