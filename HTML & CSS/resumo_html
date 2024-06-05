@@ -78,6 +78,15 @@ Elementos interativos que navegam para uma outra página do  mesmo site, ou para
 <a href="www.google.com">Ir para o Google</a>
 ```
 
+### Target
+Propriedade que define o comportamento de um link, podendo receber o valor `_self` para abrir o link na mesma aba e `_blank` para abrir em uma nova.
+
+### Title
+Propriedade que define o texto que aparece ao colocar o cursor da mouse por cima do link.
+
+### Download
+Atributo que força o navegador a baixar o conteúdo de servidor interno do link que o recebe.
+
  ## Imagens
  Para adicionarmos imagens à página, utilizamos o elemento "img", passando dentro do atributo "src" o endereço (local ou link) da imagem.
  
@@ -91,6 +100,7 @@ Atributos são propriedades adicionais para configurar ou alterar o comportament
 O elemento HTML pode conter um atributo. Em alguns casos, seu uso é obrigatório.
 O atributo é definido dentro da tag de abertura de um elemento.
 
+
 ```
 <a href="www.google.com">Visitar o Google</a>
 ```
@@ -101,3 +111,33 @@ São atributos que podem ser usados em todos os elemento HTML.
 Os mais usados são:
 -  **id**: identifica de forma única um elemento no documento HTML.
 - **class**: lista de classes de um elemento HTML.
+
+## Tabelas
+Uma tabela é um conjunto de células (que é a intersecção de uma coluna e uma linha onde é apresentado um valor). Para construir uma tabela em HTML são utilizados vários elementos e seus respectivos atributos. Há estruturas simples e mais complexas. Podem existir várias tabelas na mesma página.  
+As tabelas são apenas estruturas visuais sem funcionalidade associada.
+
+```
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>Coluna 1 - Linha 1</td>
+				<td>Coluna 2 - Linha 1</td>
+				<td>Coluna 3 - Linha 1</td>
+			</tr>
+			<tr>
+				<td>Coluna 1 - Linha 1</td>
+				<td>Coluna 2 - Linha 1</td>
+				<td>Coluna 3 - Linha 1</td>
+			</tr>
+			<tr>
+				<td>Coluna 1 - Linha 1</td>
+				<td>Coluna 2 - Linha 1</td>
+				<td>Coluna 3 - Linha 1</td>
+			</tr>
+	</body>
+</html>
+```
