@@ -415,3 +415,19 @@ Existem dois tipos de valores de unidades de dimensão em CSS:
 - **vmin** - Relativo a 1% da dimensão mínima do *viewport*
 - **vmax** - Relativo a 1% da dimenxão máxima do *viewport*
 - **%** - Porcentagem relativa ao elemento pai
+
+## Layout e responsivdade
+Reponsividade é a capacidade de páginas estilizadas de se adaptarem a diferentes tamanhos de telas.  Hoje em dia, é a finalidade de qualquer layout que ele seja responsivo. 
+Podem ser utilizados diversas técnicas para controlar um layout, dentre elas:
+
+- Normal flow  
+- Propiedade display
+- Floats
+- Positioning
+- Table layout
+- Multiple-column layout
+- **Flexbox**
+- **CSS Grid**
+
+### Normal flow
+Normal flow é simplesmente a inexistência de CSS para estilização, ou seja, a página HTML em seu estado inalterado.
