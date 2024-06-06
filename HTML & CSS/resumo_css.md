@@ -431,3 +431,13 @@ Podem ser utilizados diversas técnicas para controlar um layout, dentre elas:
 
 ### Normal flow
 Normal flow é simplesmente a inexistência de CSS para estilização, ou seja, a página HTML em seu estado inalterado.
+
+### Propriedades de layout
+As propriedades display, float e position são utilizadas para definir o comportamento visual e posicionamento dos elementos dentro da página, gerando assim o layout desejado.
+
+### Flexbox
+Flexbox é um método unidimensional de layouts para arranjar os items do documento em linhas e colunas. Por ser unidimensional, é utilizado em casos mais específicos, sendo, no geral, mais apropriado o uso da CSS Grid.
+
+### CSS Grid
+CSS Grid é um modelo de arranjamento dos elementos mais moderno, criado para solucionar problemas antigos do web-design, sendo o principal deles a responsividade da página. Diferentemente do Flexbox, o CSS Gid oferece a capacidade de trabalhar o layout de maneira bidimensional.  
+Começamos, como no Flexbox, definindo um elemento pai (geralmente div) e atribuindo a ele o atributo `display`com o valor `grid`. Esta div pai recebe o nome de Grid Container.
