@@ -441,3 +441,48 @@ Flexbox é um método unidimensional de layouts para arranjar os items do docume
 ### CSS Grid
 CSS Grid é um modelo de arranjamento dos elementos mais moderno, criado para solucionar problemas antigos do web-design, sendo o principal deles a responsividade da página. Diferentemente do Flexbox, o CSS Gid oferece a capacidade de trabalhar o layout de maneira bidimensional.  
 Começamos, como no Flexbox, definindo um elemento pai (geralmente div) e atribuindo a ele o atributo `display`com o valor `grid`. Esta div pai recebe o nome de Grid Container.
+
+## Media Queries
+As media queries são técnicas introduzidas no CSS3 que auxiliam na responsividade de uma aplicação.  
+Se trata de uma regra especial que é aplicada quando a tela atinge o determinado tamanho de resolução.
+
+### Breakpoints
+Generalizadamente diz-se que os breakpoints para cada dispositivo (em altura da tela) é:
+- **PC e Notebook:** 1024px+
+- **Tablets:** 1023px-768px+
+- **Smartphones:** 767px-320px
+
+Atualmente, é muito raro que no mercado tecnológico se trabalho com HTML, CSS e JS puros, sendo mais usual o uso de frameworks e bibliotecas.  
+Tirando por exemplo duas das bibliotecas mais utilizados, Bootstrap e TailwindCSS, temos os seguintes valores de referências para os breakpoints:
+
+### Bootstrap
+| Breakpotins | Classe |  Dimensões | 
+| ----------- | ----------- |-----------|
+| Extra small   | xs    | <576px |
+| Small         | sm    |  ≥576px    |
+| Medium        | md    |≥768px    |
+| Large         | lg   |≥992px    |
+| Extra large   | xl  | ≥1200px     |
+| Extra extra large  | xxl |≥1400px     |
+
+
+### TailwindCSS
+| Breakpotins | Classe |  Dimensões | 
+| ----------- | ----------- |-----------|
+| Extra small   | sm    | ≤640px |
+| Small         | md    |  ≤768px    |
+| Medium        | lg    |≤1024px    |
+| Large         | xl   |≤1280px    |
+| Extra large   | 2xl  | ≤1536px     |
+
+As bibliotecas modernam costumam possuir uma abordagem de "mobile first", significando que ao estilizar os elementos sem utilizar os prefixos de classe de breakpoints, a estilização já toma, por padrão, efeito em todos os tamanhos de tela, então especificar o breakpoint apenas se faz necessário quando
+queremos que determinado efeito se aplique a partir de um certo tamanho de tela.
+
+Por exemplo:
+
+```
+<!-- Isso irá centralizar o texto no mobile e alinhará à esquerda em telas acima de 640px-->
+<div class="text-center sm:text-left"></div>
+```
+### Vertical e horizontal
+Há também a possibilidade de, através das media queries, trabalhar as diferentes orientações de dispositivos móveis (retrato e paisagem), através do atributo de media querie orientation.
