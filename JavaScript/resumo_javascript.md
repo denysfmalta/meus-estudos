@@ -153,3 +153,12 @@ Uma das formas de manter a noção do tipo de suas variáveis é usando o operad
 ```
 console.log(typeof(<variável>))
 ```
+## DOM - Document Object Model
+
+### O que é o DOM?
+
+É a representação de dados dos objetos que compõem a estrutura e o conteúdo de um documento na web.  
+No DOM, todas as partes do documento, tais como elementos, atributos, texto, etc. são organizados numa estrutura hierárquica em foram de árvore, semelhante a uma árvore genealógica.  
+Na terminologia do DOM, estas partes individuais do documento são conhecidas como nós (nodes).  
+Com o DOM HTML é possível utilizar JavaScript para construir elementos de HTML, documentos completos, navegar na sua estrutura hierárquica e adicionar, modificar ou apagar elementos e atributos ou o seu conteúdo, entre outras funcionalidades.
+
